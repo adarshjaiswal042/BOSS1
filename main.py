@@ -34,7 +34,7 @@ bot = Client(
     api_id=int(os.environ.get("API_ID")),
     api_hash=os.environ.get("API_HASH"))
 
-) 
+
 async def exec(cmd):
   proc = await asyncio.create_subprocess_exec(*cmd,
         stdout=asyncio.subprocess.PIPE,
@@ -144,7 +144,7 @@ async def account_login(bot: Client, m: Message):
       await exec(command_to_exec)
       prog = await m.reply_text(Show)
       if ".pdf" in url:
-          cc2 = f'{str(count).zfill(2)}. {name}\n\n**Batch »** {mm}\n**Dowloaded By »** {raw_text0}'
+          cc2 = f'{str(count).zfill(2)}. {name}\n\n**Batch Â»** {mm}\n**Dowloaded By Â»** {raw_text0}'
           await bot.send_document(document = name+".pdf",caption=cc2)
           os.remove(f"{name}")
           count+=1
@@ -158,7 +158,7 @@ async def account_login(bot: Client, m: Message):
         continue
       else:
         start_time = time.time()
-        cc = f'{str(count).zfill(2)}. {name} - {vid_format}p\n\n**Batch »** {mm}\n**Dowloaded By »** {raw_text0}'
+        cc = f'{str(count).zfill(2)}. {name} - {vid_format}p\n\n**Batch Â»** {mm}\n**Dowloaded By Â»** {raw_text0}'
         try:
           duration, width, height = get_video_attributes(path)
         except:
@@ -480,8 +480,8 @@ async def account_login(bot: Client, m: Message):
              try:
                 Show = f"**Downloading:-**\n\n** Video Name :-** `{name}\nQuality - {raw_text2}`\n\n **Downloading By Zatch Bot**"
                 prog = await m.reply_text(Show)
-                cc = f'**Video No. :** {str(count).zfill(3)}\n**Video Name :** {name1} {res} zatch.mkv\n**Batch Name :** {raw_text0}\n\n**Bot By: Zatch Bro**\n**📖𝘈𝘭𝘸𝘢𝘺𝘴 𝘒𝘦𝘦𝘱 𝘓𝘦𝘢𝘳𝘯𝘪𝘯𝘨**'
-                cc1 = f'**Pdf No. :** {str(count).zfill(3)}\n**Pdf Name :** {name1} {res} zatch.pdf\n**Batch Name :**{raw_text0}\n\n**Bot By: Zatch Bro**\n**📖𝘈𝘭𝘸𝘢𝘺𝘴 𝘒𝘦𝘦𝘱 𝘓𝘦𝘢𝘳𝘯𝘪𝘯𝘨**'
+                cc = f'**Video No. :** {str(count).zfill(3)}\n**Video Name :** {name1} {res} zatch.mkv\n**Batch Name :** {raw_text0}\n\n**Bot By: Zatch Bro**\n**ððð­ð¸ð¢ðºð´ ðð¦ð¦ð± ðð¦ð¢ð³ð¯ðªð¯ð¨**'
+                cc1 = f'**Pdf No. :** {str(count).zfill(3)}\n**Pdf Name :** {name1} {res} zatch.pdf\n**Batch Name :**{raw_text0}\n\n**Bot By: Zatch Bro**\n**ððð­ð¸ð¢ðºð´ ðð¦ð¦ð± ðð¦ð¢ð³ð¯ðªð¯ð¨**'
                 #                         await prog.delete (True)
                 #                 if cmd == "pdf" or "drive" in url:
                 #                     try:
@@ -513,7 +513,7 @@ async def account_login(bot: Client, m: Message):
                         await m.reply_document(
                             ka,
                             caption=
-                            f'**Title »** {name1} {res}.pdf\n**Caption »** {raw_text0}\n**Index »** {str(count).zfill(3)}'
+                            f'**Title Â»** {name1} {res}.pdf\n**Caption Â»** {raw_text0}\n**Index Â»** {str(count).zfill(3)}'
                         )
                         count += 1
                         # time.sleep(1)
@@ -535,7 +535,7 @@ async def account_login(bot: Client, m: Message):
 
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed �?**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
+                    f"**downloading failed â?**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`"
                 )
                 continue
 
@@ -709,7 +709,7 @@ async def account_login(bot: Client, m: Message):
                 time.sleep(1)
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed âŒ**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}` & `{url1}`"
+                    f"**downloading failed Ã¢ÂÅ**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}` & `{url1}`"
                 )
                 continue
     except Exception as e:
@@ -770,7 +770,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n`"
             prog = await m.reply_text(Show)
-            cc = f'**Name »** {name1}.mp4\n**Batch »** {raw_text5}\n**Index »** {str(count).zfill(3)}'
+            cc = f'**Name Â»** {name1}.mp4\n**Batch Â»** {raw_text5}\n**Index Â»** {str(count).zfill(3)}'
             if "youtu" or "vision" in url:
                 cmd = f'yt-dlp "{url}" -o "{name}"'
             elif "player.vimeo" in url:
@@ -788,7 +788,7 @@ async def account_login(bot: Client, m: Message):
                 time.sleep(1)
             except Exception as e:
                 await m.reply_text(
-                    f"**downloading failed �?**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n"
+                    f"**downloading failed â?**\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n"
                 )
                 continue
     except Exception as e:
