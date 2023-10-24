@@ -47,9 +47,7 @@ async def account_login(bot: Client, m: Message):
             'client-type': 'MOBILE',
             'device-meta': '{"APP_VERSION":"32","APP_VERSION_NAME":"30.0.2","DEVICE_MAKE":"INFINIX MOBILITY LIMITED","DEVICE_MODEL":"Infinix X6812","OS_VERSION":"6","PACKAGE_NAME":"xyz.penpencil.khansirofficiam"}',
             'content-type': 'application/json; charset=UTF-8'
-      "Content-Length": "98"
-        "Accept-Encoding": "gzip"
-        "user-agent": "Mozilla/5.0 (Linux; Android 11; Infinix X6812 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/118.0.0.0 Mobile Safari/537.36"   
+      
             
             }
 
