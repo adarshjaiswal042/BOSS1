@@ -78,7 +78,7 @@ async def account_login(bot: Client, m: Message):
             'user-agent': 'Android',
             'randomid': '64192320b03d738c',
             'client-type': 'MOBILE',
-            '{"APP_VERSION":"32","APP_VERSION_NAME":"30.0.2","DEVICE_MAKE":"INFINIX MOBILITY LIMITED","DEVICE_MODEL":"Infinix X6812","OS_VERSION":"6","PACKAGE_NAME":"xyz.penpencil.khansirofficiam"}',
+            
             'content-type': 'application/json; charset=UTF-8',
     }
     params = {
